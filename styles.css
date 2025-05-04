@@ -1,5 +1,6 @@
 body{
         font-family: Georgia,serif;
+        overflow-x: hidden;
     }
 
     #logos p{
@@ -10,7 +11,36 @@ body{
     }
     .bg-light {
   background-color: #f0f0f0 !important;
+    }
+#frontpage {
+    height: 100vh; /* Ensures it takes the full viewport height */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
 }
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.navbar-brand {
+    font-size: 1.2rem;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-color: #fff;
+}
+
 
 .rounded {
   border-radius: 12px;
